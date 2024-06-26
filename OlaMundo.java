@@ -1,6 +1,18 @@
+import java.util.Scanner;
+
 public class OlaMundo {
 
     public static void main(String[] args) {
-        System.out.println("Ola mundo");
+        Scanner leia = new Scanner(System.in);
+
+        System.out.println("Informe seu nome");
+        String seuNome = leia.nextLine();
+
+        String menssagem = Saudacao(seuNome);
+        System.out.println(menssagem);
+
+    }
+    public static String  Saudacao(String nome){
+        return "olá, seja muito bem-vindo " + nome;
     }
 }
